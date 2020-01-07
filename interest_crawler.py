@@ -1,6 +1,6 @@
-import pandas as pd
 import requests
 from lxml import etree
+import os
 
 
 class ItemCardWrapper(object):
@@ -61,3 +61,5 @@ with open("data.txt", 'w') as data:
         data.write(item_card_wrapper.date+"\n")
         for i in item_card_wrapper.target_interest_list:
             data.write(i.name+" "+i.prob+"\n")
+print("输出结果成功!")
+os.system("pause")
