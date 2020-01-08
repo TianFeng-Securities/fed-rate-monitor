@@ -55,7 +55,7 @@ for item_card_wrapper in ItemCardWrapperList:
     print(item_card_wrapper.date)
     for i in item_card_wrapper.target_interest_list:
         print(i.name, i.prob)
-with open(update_date+".txt", 'w') as data:
+with open("data.txt", 'w') as data:
     data.write(update_date+"\n")
     for item_card_wrapper in ItemCardWrapperList:
         data.write(item_card_wrapper.date+"\n")
